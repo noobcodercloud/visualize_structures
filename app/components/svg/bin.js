@@ -1,4 +1,4 @@
-const Bin = ({ className = "w-5 h-5" }) => {
+const Bin = ({ className = "w-5 h-5", onClick }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,6 +9,7 @@ const Bin = ({ className = "w-5 h-5" }) => {
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
+      onClick={onClick}
     >
       <path d="M4 7h16" />
       <path d="M9 3h6l1 2H8l1-2z" />
